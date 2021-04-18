@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+
+    <ec.dina.btefonts.TextViewFonts
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/getion_de_empleados"
+        android:textAlignment="center"
+        android:textColor="#272929"
+        android:textSize="30sp"
+        app:dm_font="segoe_print"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnRegistrar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/registrar_empleado"
+        android:textSize="18sp"
+        app:lb_isShadowEnable="true"
+        app:lb_isCircular="true"
+        app:lb_shadowHeight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnViejo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/empleado_m_s_viejo"
+        android:textSize="18sp"
+        app:lb_isShadowEnable="true"
+        app:lb_isCircular="true"
+        app:lb_shadowHeight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrar" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnJoven"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/empleado_m_s_joven"
+        android:textSize="18sp"
+        app:lb_isShadowEnable="true"
+        app:lb_isCircular="true"
+        app:lb_shadowHeight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViejo" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnSalarios"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/informaci_n_salarios"
+        android:textSize="18sp"
+        app:lb_isShadowEnable="true"
+        app:lb_isCircular="true"
+        app:lb_shadowHeight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJoven" />
+
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnCargos"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/info_cargos"
+        android:textSize="18sp"
+        app:lb_isShadowEnable="true"
+        app:lb_isCircular="true"
+        app:lb_shadowHeight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalarios" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

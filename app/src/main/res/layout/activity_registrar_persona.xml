@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEDDE4"
+    tools:context=".RegistrarPersona">
+
+    <ec.dina.btefonts.TextViewFonts
+        android:id="@+id/textView2"
+        android:layout_width="273dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/regs_empleado"
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textSize="30sp"
+        app:dm_font="segoe_print"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/txtNombre"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:form_hint="Nombre"
+        app:form_label="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/txtApellidos"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:form_hint="Apellidos"
+        app:form_label="Apellidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/txtCorreo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        app:form_hint="Correo electronico"
+        app:form_inputType="email"
+        app:form_label="Correo electronico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidos" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/txtEdad"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        app:form_hint="Edad"
+        app:form_inputType="number"
+
+        app:form_label="Edad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/txtCargo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:form_hint="Cargo"
+        app:form_inputType="text"
+        app:form_label="Cargo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/txtSalario"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        app:form_hint="Salario"
+        app:form_inputType="number"
+        app:form_label="Salario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCargo" />
+
+    <com.omarshehe.forminputkotlin.FormInputButton
+        android:id="@+id/btnGuardar"
+        android:layout_width="137dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="@string/guardar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="35dp"
+        app:form_progressColor="@color/teal_200"
+        app:form_showProgress="true"
+        app:form_valueOnLoad="Please, wait.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSalario" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
